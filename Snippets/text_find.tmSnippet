@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var target_obj = ${1:app.documents[0]};
+var find_txt_obj = {
+  findWhat : "${2:find}"
+};
+
+with(app.findChangeTextOptions){
+  caseSensitive               = false;
+  includeFootnotes            = false;
+  includeHiddenLayers         = false;
+  includeLockedLayersForFind  = false;
+  includeLockedStoriesForFind = false;
+  includeMasterPages          = false;
+  kanaSensitive               = true;
+  wholeWord                   = false;
+  widthSensitive              = true;
+}
+
+var ${3:match} = text_find(target_obj, find_txt_obj);
+
+function text_find(target_obj, find_txt_obj){
+  app.findTextPreferences = NothingEnum.nothing;
+  app.findTextPreferences.properties = find_txt_obj;
+  var result = target_obj.findText();
+  app.findTextPreferences = NothingEnum.nothing;
+  return result;
+}
+</string>
+	<key>name</key>
+	<string>text_find</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>find</string>
+	<key>uuid</key>
+	<string>BCB3D594-BD1B-462D-92E7-062FCA8D33D9</string>
+</dict>
+</plist>

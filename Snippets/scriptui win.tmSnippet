@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${50:#targetengine '${51:session}'}
+var u;
+var ${1:w} = new Window('${20:${21:dialog}${22:palette}${23:window}}', "${30:title}", ${40:[${41:x0}, ${42:y0}, ${43:x1}, ${44:y1}]}${45:u});
+${1:w}.orientation = 'column';
+${1:w}.margins = 5;
+${1:w}.spacing = 5;
+${1:w}.alignChildren = ['fill', 'fill'];
+
+${0:}
+
+
+
+${1:w}.btn_g = ${1:w}.add('group');
+var ok_btn  = ${1:w}.btn_g.add('button', u, "OK", {name: "ok"});
+var can_btn = ${1:w}.btn_g.add('button', u, "Cancel", {name: "cancel"});
+
+ok_btn.minimumSize = can_btn.minimumSize = [66,23]; //fix for cs3
+ok_btn.size  = ok_btn.minimumSize;
+can_btn.size = can_btn.minimumSize;
+
+var flg = false;
+ok_btn.onClick = function () {
+  // do somthing
+  flg = true;
+  ${1:w}.close();
+}
+
+can_btn.onClick = function () {
+  ${1:w}.close();
+}
+
+${1:w}.show();</string>
+	<key>name</key>
+	<string>scriptui win</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>win</string>
+	<key>uuid</key>
+	<string>E6FCE63B-8CDE-4BA7-96B2-5CD7F3DC8972</string>
+</dict>
+</plist>

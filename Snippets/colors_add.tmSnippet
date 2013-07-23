@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>colors.add({
+  model: ColorModel.${10:${11:PROCESS}${12:SPOT}${13:REGISTRATION}${14:MIXEDINKMODEL}}, 
+  space: ColorSpace.${20:${21:CMYK}${22:RGB}${23:LAB}${24:MIXEDINK}}, 
+  colorValue: [${30:0,0,0,0}], 
+  name: "${40:}"}
+);</string>
+	<key>name</key>
+	<string>colors.add</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>colors</string>
+	<key>uuid</key>
+	<string>93BD9450-64F5-4DAA-9316-0A2B7561EAA0</string>
+</dict>
+</plist>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var target_obj = ${1:app.documents[0]};
+var find_grep_obj = {
+  findWhat : "${2:[A-Z]}"
+};
+var change_grep_obj = {
+  changeTo : "${3:0}",
+  pointSize : ${4:36}
+};
+
+with(app.findChangeGrepOptions){
+  includeFootnotes            = false;
+  includeHiddenLayers         = false;
+  includeLockedLayersForFind  = false;
+  includeLockedStoriesForFind = false;
+  includeMasterPages          = false;
+  kanaSensitive               = true;
+  widthSensitive              = true;
+}
+
+grep_find_and_change(target_obj, find_grep_obj, change_grep_obj);
+
+function grep_find_and_change(target_obj, find_grep_obj, change_grep_obj){
+  app.findGrepPreferences = NothingEnum.nothing;
+  app.changeGrepPreferences = NothingEnum.nothing;
+
+  app.findGrepPreferences.properties = find_grep_obj;
+  app.changeGrepPreferences.properties = change_grep_obj;
+  target_obj.changeGrep();
+
+  app.findGrepPreferences = NothingEnum.nothing;
+  app.changeGrepPreferences = NothingEnum.nothing;
+}</string>
+	<key>name</key>
+	<string>grep_find_and_change</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>find</string>
+	<key>uuid</key>
+	<string>F67E11B4-8A7C-45C8-9C71-C9F26D67102A</string>
+</dict>
+</plist>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>app.transformationMatrices.add({
+  ${10:clockwiseShearAngle: ${11:/*Shear*/},}
+  ${20:counterclockwiseRotationAngle: ${21:/*Rotate*/},}
+  ${30:horizontalScaleFactor: ${31:/*Horizontal Scale*/},}
+  ${40:verticalScaleFactor: ${41:/*Vertical Scale*/},}
+  ${50:horizontalTranslation: ${51:/*Horizontal Traslate*/},}
+  ${60:verticalTranslation: ${61:/*Vertical Translate*/}}
+});</string>
+	<key>name</key>
+	<string>transformationMatrices.add</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>matrix</string>
+	<key>uuid</key>
+	<string>AF537D72-1792-4579-B3B2-7314F1788B81</string>
+</dict>
+</plist>
