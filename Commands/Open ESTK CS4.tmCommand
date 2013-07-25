@@ -8,7 +8,13 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-open -a '/Applications/Utilities/Adobe Utilities.localized/ExtendScript Toolkit CS4/ExtendScript Toolkit.app' "$TM_FILEPATH"</string>
+if [[ $TM_FILEPATH ]]; then
+  open -a '/Applications/Utilities/Adobe Utilities.localized/ExtendScript Toolkit CS4/ExtendScript Toolkit.app' "$TM_FILEPATH"
+  exit 0
+else
+  echo "The script has not saved yet. Please save it."
+  exit 1
+fi</string>
 	<key>input</key>
 	<string>document</string>
 	<key>inputFormat</key>
