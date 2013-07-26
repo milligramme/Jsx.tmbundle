@@ -3,10 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>var ${1:i} = ${2:Something.length};
-while (${1:i}--) {
-  // do something
-};</string>
+	<string>var ${10:i} = ${20:${21:Something}.length};
+while (${10:i}--) {
+  ${30:// do something}
+};
+</string>
 	<key>name</key>
 	<string>while</string>
 	<key>scope</key>
