@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>app.transformationMatrices.add({
-  ${10:clockwiseShearAngle: ${11:/*Shear*/},}
-  ${20:counterclockwiseRotationAngle: ${21:/*Rotate*/},}
-  ${30:horizontalScaleFactor: ${31:/*Horizontal Scale*/},}
-  ${40:verticalScaleFactor: ${41:/*Vertical Scale*/},}
-  ${50:horizontalTranslation: ${51:/*Horizontal Traslate*/},}
-  ${60:verticalTranslation: ${61:/*Vertical Translate*/}}
+	<string>var ${0:transformation_matrix_obj} = app.transformationMatrices.add({
+  ${10:clockwiseShearAngle: ${11:0/*Shear*/},}
+  ${20:counterclockwiseRotationAngle: ${21:0/*Rotate*/},}
+  ${30:horizontalScaleFactor: ${31:1/*Horizontal Scale*/},}
+  ${40:verticalScaleFactor: ${41:1/*Vertical Scale*/},}
+  ${50:horizontalTranslation: ${51:0/*Horizontal Traslate*/},}
+  ${60:verticalTranslation: ${61:0/*Vertical Translate*/}}
 });</string>
 	<key>name</key>
 	<string>transformationMatrices.add</string>
