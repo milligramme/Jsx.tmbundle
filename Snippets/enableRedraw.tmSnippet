@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>app.scriptPreferences.enableRedraw = ${1|false,true|};</string>
+	<key>name</key>
+	<string>enableRedraw</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>redraw</string>
+	<key>uuid</key>
+	<string>4156C4E2-81CF-4431-B1A6-7F8D2FFE5948</string>
+</dict>
+</plist>
