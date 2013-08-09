@@ -35,7 +35,7 @@ target = ""
 open(tm_filepath) do |org_js|
   # target app.
   jsx = org_js.read
-  target = jsx.scan(/^#target\s+.+/).first.downcase || "#target indesign"
+  target = (jsx.scan(/^#target\s+.+/).first || "#target indesign").downcase
 
   # override $.write and $.writeln function, set tempo_wr obj to tempo_js
   open(tempo_js.path, "w") do |js|
