@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>fit(FitOptions.${1:APPLY_FRAME_FITTING_OPTIONS
+}${2:APPLY_FRAME_FITTING_OPTIONS
+}${3:CENTER_CONTENT
+}${4:CONTENT_TO_FRAME
+}${5:FILL_PROPORTIONALLY
+}${6:FRAME_TO_CONTENT
+}${7:PROPORTIONALLY
+});</string>
+	<key>name</key>
+	<string>fit()</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>fit</string>
+	<key>uuid</key>
+	<string>1B02C88C-1EFE-4EF2-B52A-1A9E5A2E0A5A</string>
+</dict>
+</plist>
