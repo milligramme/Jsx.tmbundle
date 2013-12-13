@@ -4,9 +4,12 @@
 <dict>
 	<key>content</key>
 	<string>try {
-  ${1:}
+  ${1://code}
 }
-catch(e){${2:}}</string>
+catch(e){${2:}}
+${3: finally {
+  ${4://code}
+\}}</string>
 	<key>name</key>
 	<string>try catch</string>
 	<key>scope</key>
