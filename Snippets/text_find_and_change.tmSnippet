@@ -5,10 +5,10 @@
 	<key>content</key>
 	<string>var target_obj = ${1:app.documents[0]};
 var find_txt_obj = {
-  findWhat : "${2:find}",
+  findWhat : "${2:find}"
 };
 var change_txt_obj = {
-  changeTo : "${3:change}",
+  changeTo : "${3:change}"
 };
 
 with(app.findChangeTextOptions){
