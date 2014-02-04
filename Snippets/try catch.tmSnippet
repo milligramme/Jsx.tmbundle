@@ -7,7 +7,7 @@
   ${1://code}
 }
 catch(e){${2:}}
-${3: finally {
+${3:finally {
   ${4://code}
 \}}</string>
 	<key>name</key>
