@@ -97,21 +97,21 @@ TextMate::Executor.run(ENV["TM_OSASCRIPT"] || "osascript", tempo_as.path, tempo_
   error_fd ||= IO.for_fd(ENV["TM_ERROR_FD"].to_i)
   case type
   when :err
-    # error
-    if str =~ /^([^\:]+):(\d+):(\d+): (.*?): (.*) \((-?\d+)\)$/ then
-      filepath, start,  stop, err, msg, status = $1, $2.to_i, $3.to_i, $4, $5, $6
-      err = err.gsub(/\b\w(?=\w{3,})/) { |m| m.upcase }
-            
-      error_fd &lt;&lt; "&lt;div id=\"exception_report\" class=\"framed\"&gt;\n"
-      error_fd &lt;&lt; "&lt;p id=\"exception\"&gt;&lt;strong&gt;#{htmlize err}&lt;/strong&gt;: #{htmlize msg}&lt;/p&gt;\n"
-                
-      error_fd &lt;&lt; "&lt;p&gt;Error #{status}.&lt;/p&gt;\n"
-      error_fd &lt;&lt; "&lt;/div&gt;\n"
-      error_fd.flush
-      ""
-    else
-      "&lt;span class=\"err\" style=\"color:red;\"&gt;#{htmlize(str)}&lt;/span&gt;&lt;br/&gt;"
-    end
+    # # error
+    # if str =~ /^([^\:]+):(\d+):(\d+): (.*?): (.*) \((-?\d+)\)$/ then
+    #   filepath, start,  stop, err, msg, status = $1, $2.to_i, $3.to_i, $4, $5, $6
+    #   err = err.gsub(/\b\w(?=\w{3,})/) { |m| m.upcase }
+    #         
+    #   error_fd &lt;&lt; "&lt;div id=\"exception_report\" class=\"framed\"&gt;\n"
+    #   error_fd &lt;&lt; "&lt;p id=\"exception\"&gt;&lt;strong&gt;#{htmlize err}&lt;/strong&gt;: #{htmlize msg}&lt;/p&gt;\n"
+    #             
+    #   error_fd &lt;&lt; "&lt;p&gt;Error #{status}.&lt;/p&gt;\n"
+    #   error_fd &lt;&lt; "&lt;/div&gt;\n"
+    #   error_fd.flush
+    #   ""
+    # else
+    #   "&lt;span class=\"err\" style=\"color:red;\"&gt;#{htmlize(str)}&lt;/span&gt;&lt;br/&gt;"
+    # end
   when :out
     # read log writen by $.write(), $.writeln() in tempo_js
     tempo_wr.open
