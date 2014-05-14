@@ -6,9 +6,15 @@
 	<string>try {
   ${1://code}
 }
-catch(e){${2:}}
-${3:finally {
-  ${4://code}
+catch(T_T){
+  ${20:${21:alert}${22:$.writeln}([
+    T_T.message,
+    T_T.line,
+    T_T.stack,
+    ].join("\n"));
+}}
+${2:finally {
+  ${3://code}
 \}}</string>
 	<key>name</key>
 	<string>try catch</string>
