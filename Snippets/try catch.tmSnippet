@@ -21,7 +21,7 @@ ${2:finally {
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>try</string>
+	<string>tr</string>
 	<key>uuid</key>
 	<string>E57F5CA7-45B9-48DC-83B3-0001CD4F3216</string>
 </dict>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>.constructor${1:.name === '${0:name}'}</string>
+	<string>.constructor${1:.name${2: === '${0:name}'}}</string>
 	<key>name</key>
 	<string>constructor.name</string>
 	<key>scope</key>
