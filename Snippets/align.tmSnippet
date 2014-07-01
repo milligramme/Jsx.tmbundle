@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>align(${10:alignDistributeItems},
+  AlignOptions.${21:BOTTOM_EDGES
+}${22:HORIZONTAL_CENTERS
+}${23:LEFT_EDGES
+}${24:RIGHT_EDGES
+}${25:TOP_EDGES
+}${26:VERTICAL_CENTERS
+  }${30:,AlignDistributeBounds.${31:ITEM_BOUNDS
+}${32:MARGIN_BOUNDS
+}${33:PAGE_BOUNDS
+}${34:SPREAD_BOUNDS}
+})</string>
+	<key>name</key>
+	<string>align()</string>
+	<key>tabTrigger</key>
+	<string>ali</string>
+	<key>uuid</key>
+	<string>61D9ADBD-0E8E-4081-A4D0-5652ED4C547C</string>
+</dict>
+</plist>

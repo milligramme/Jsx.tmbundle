@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>distribute(${10:alignDistributeItems},
+  DistributeOptions.${21:BOTTOM_EDGES
+}${22:HORIZONTAL_CENTERS
+}${23:HORIZONTAL_SPACE
+}${24:LEFT_EDGES
+}${25:RIGHT_EDGES
+}${26:TOP_EDGES
+}${27:VERTICAL_CENTERS
+}${28:VERTICAL_SPACE
+  }${30:,AlignDistributeBounds.${31:ITEM_BOUNDS
+}${32:MARGIN_BOUNDS
+}${33:PAGE_BOUNDS
+}${34:SPREAD_BOUNDS}
+  }${40:,}${41|true,false|}
+  ${50:,}${51:absoluteDistributeMeasurement}
+)
+</string>
+	<key>name</key>
+	<string>distribute()</string>
+	<key>tabTrigger</key>
+	<string>dist</string>
+	<key>uuid</key>
+	<string>ACBD728E-1E4B-406B-BD2A-78B35576B23F</string>
+</dict>
+</plist>
