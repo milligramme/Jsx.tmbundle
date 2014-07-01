@@ -4,24 +4,24 @@
 <dict>
 	<key>content</key>
 	<string>try {
-  ${1://code}
+  ${30://code}
 }
-catch(T_T){
-  ${20:${21:alert}${22:$.writeln}([
-    T_T.message,
-    T_T.line,
-    T_T.stack,
+catch(x_x){
+  ${1:${10:alert}${11:$.writeln}([
+    x_x.message,
+    x_x.line,
+    x_x.stack,
     ].join("\n"));
 }}
-${2:finally {
-  ${3://code}
+${20:finally {
+  ${21://code}
 \}}</string>
 	<key>name</key>
 	<string>try catch</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>tr</string>
+	<string>try</string>
 	<key>uuid</key>
 	<string>E57F5CA7-45B9-48DC-83B3-0001CD4F3216</string>
 </dict>
