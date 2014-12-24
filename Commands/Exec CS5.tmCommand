@@ -8,120 +8,21 @@
 	<string>#!/usr/bin/env ruby
 # -*- coding:  utf-8 -*-
 
-require ENV["TM_SUPPORT_PATH"] + "/lib/tm/executor"
-require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
-require 'tempfile'
+require "#{ENV['TM_SUPPORT_PATH']}/lib/tm/executor"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/tm/save_current_document"
+require "tempfile"
 require "erb"
 require "pathname"
+require "#{ENV['TM_BUNDLE_SUPPORT']}/bin/jsx_core"
 
 cs_version = "CS5"
 
 TextMate.save_current_document
 TextMate::Executor.make_project_master_current_document
 
-error_fd = nil
-tm_filepath = Pathname.new(ENV["TM_FILEPATH"])
+jsx = JsxCore.new(cs_version)
+jsx.exec
 
-APP_PATH_ID = "Adobe InDesign #{cs_version}.app"
-APP_PATH_AI = "/Applications/Adobe Illustrator #{cs_version == 'CS5.5' ? 'CS5.1' : cs_version}/Adobe Illustrator.app"
-APP_PATH_PS = "Adobe Photoshop #{cs_version == 'CS5.5' ? 'CS5.1' : cs_version}.app"
-
-tempo_as = Tempfile::new(["",".scpt"])
-tempo_wr = Tempfile::new(["",".log"])
-tempo_js = Tempfile::new(["",".jsx"])
-
-target = ""
-
-open(tm_filepath) do |org_js|
-  # target app.
-  jsx = org_js.read
-  target = (jsx.scan(/^#target\s+.+/).first || "#target indesign").downcase
-
-  # override $.write and $.writeln function, set tempo_wr obj to tempo_js
-  open(tempo_js.path, "w") do |js|
-    include_current_path = tm_filepath.parent.to_s
-
-    JSX_HEADER = &lt;&lt;-JSX_HEAD
-var ___ = new File("&lt;%= tempo_wr.path %&gt;");
-___.encoding="UTF8";
-___.lineFeed="unix";
-___.open("e");
-$.write=function(){___.seek(0,2);___.write(arguments[0])};
-$.writeln=function(){___.seek(0,2);___.writeln(arguments[0])};
-
-#includepath &lt;%= include_current_path %&gt;
-
-&lt;%= jsx %&gt;
-___.close();
-JSX_HEAD
-    run_jsx = ERB.new(JSX_HEADER).result(binding).gsub("\\","\\\\")
-
-    js.write(run_jsx)
-  end
-end
-
-# switch application
-if target.match 'photoshop'
-  app = APP_PATH_PS
-  run = "do javascript file (fileName as POSIX file)"
-elsif target.match 'illustrator'
-  app = APP_PATH_AI
-  run = "do javascript file (fileName as POSIX file)"
-else
-  app = APP_PATH_ID
-  run = "do script file (fileName as POSIX file) language javascript"
-end
-
-
-# generate applescript
-# run applescript by osascript
-AS_TEMPLATE = &lt;&lt;-APPLESCRIPT
-on run argv
-  set fileName to item 1 of argv
-  tell application \"&lt;%= app %&gt;\"
-    with timeout of (1 * 60 * 60) seconds
-      &lt;%= run %&gt;
-    end timeout
-  end tell
-  return true
-end run
-APPLESCRIPT
-run_scpt = ERB.new(AS_TEMPLATE).result(binding)
-
-# write script to applescript file
-open(tempo_as.path, "w") do |as|
-  as.write run_scpt
-end
-
-TextMate::Executor.run(ENV["TM_OSASCRIPT"] || "osascript", tempo_as.path, tempo_js.path ) do |str, type|
-  error_fd ||= IO.for_fd(ENV["TM_ERROR_FD"].to_i)
-  case type
-  when :err
-    # # error
-    # if str =~ /^([^\:]+):(\d+):(\d+): (.*?): (.*) \((-?\d+)\)$/ then
-    #   filepath, start,  stop, err, msg, status = $1, $2.to_i, $3.to_i, $4, $5, $6
-    #   err = err.gsub(/\b\w(?=\w{3,})/) { |m| m.upcase }
-    #         
-    #   error_fd &lt;&lt; "&lt;div id=\"exception_report\" class=\"framed\"&gt;\n"
-    #   error_fd &lt;&lt; "&lt;p id=\"exception\"&gt;&lt;strong&gt;#{htmlize err}&lt;/strong&gt;: #{htmlize msg}&lt;/p&gt;\n"
-    #             
-    #   error_fd &lt;&lt; "&lt;p&gt;Error #{status}.&lt;/p&gt;\n"
-    #   error_fd &lt;&lt; "&lt;/div&gt;\n"
-    #   error_fd.flush
-    #   ""
-    # else
-    #   "&lt;span class=\"err\" style=\"color:red;\"&gt;#{htmlize(str)}&lt;/span&gt;&lt;br/&gt;"
-    # end
-  when :out
-    # read log writen by $.write(), $.writeln() in tempo_js
-    tempo_wr.open
-    str = "" # clear "true"
-    str &lt;&lt; tempo_wr.read
-    tempo_wr.close!
-
-    htmlize(str)
-  end
-end
 </string>
 	<key>input</key>
 	<string>document</string>
