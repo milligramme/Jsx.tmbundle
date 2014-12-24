@@ -39,6 +39,7 @@ To execute .jsx and .jsxinc add File Types : 'jsx jsxinc'.
 * Execute in CS5.app   = control + 5 
 * Execute in CS5.5.app = control + shift + 5
 * Execute in CS6.app   = control + 6 
+* Execute in CC.app    = control + 7 
 
 By Default run with InDesign, this can be changed using `#target`
 
@@ -59,4 +60,5 @@ Can use relative path to `#include` scripts, like below
 * Open in Estk CS5   = control + option + 5
 * Open in Estk CS5.5 = control + option + shift + 5
 * Open in Estk CS6   = control + option + 6
+* Open in Estk CC    = control + option + 7
 
