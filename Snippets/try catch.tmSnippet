@@ -10,7 +10,7 @@ catch(x_x){
   ${1:${10:alert}${11:$.writeln}([
     x_x.message,
     x_x.line,
-    x_x.stack,
+    $.stack,
     ].join("\n"));
 }}
 ${20:finally {
