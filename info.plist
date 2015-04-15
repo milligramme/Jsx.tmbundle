@@ -70,7 +70,6 @@
 				<key>items</key>
 				<array>
 					<string>CB6C2AC2-E1F5-4381-9D99-6CD18D890E89</string>
-					<string>C6DF606C-F21F-487D-8ED4-2CE51F0DFACD</string>
 					<string>950D23F2-D1C4-4569-8224-97516426E7BF</string>
 					<string>DE9EE989-74B9-4EFF-AC07-72A7134CB4A0</string>
 					<string>4156C4E2-81CF-4431-B1A6-7F8D2FFE5948</string>
@@ -127,6 +126,7 @@
 					<string>B4D97E21-1D22-413E-B077-3FDC6069683B</string>
 					<string>B1CB5A2D-04B9-4AEA-8375-DEDFFBE549E3</string>
 					<string>B9C3252E-2CA2-4D5F-B38A-10E3FE7ED917</string>
+					<string>C6DF606C-F21F-487D-8ED4-2CE51F0DFACD</string>
 				</array>
 				<key>name</key>
 				<string>Core</string>
@@ -136,9 +136,20 @@
 				<key>items</key>
 				<array>
 					<string>2B10796C-88DF-45DC-AB61-0754792B9C8B</string>
+					<string>F16C053A-F130-44F7-8F0C-90FF8F915223</string>
 				</array>
 				<key>name</key>
 				<string>Illustrator</string>
+			</dict>
+			<key>F16C053A-F130-44F7-8F0C-90FF8F915223</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>5CCA5277-ECCA-40F5-82D4-8EC692BD28DC</string>
+					<string>FC36B703-5A2E-4C89-AFE9-462C0B5394EA</string>
+				</array>
+				<key>name</key>
+				<string>Interaction Level for Illustrator</string>
 			</dict>
 			<key>DE9EE989-74B9-4EFF-AC07-72A7134CB4A0</key>
 			<dict>

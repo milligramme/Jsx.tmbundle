@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>app.userInteractionLevel = UserInteractionLevel.DISPLAYALERTS;
+</string>
+	<key>name</key>
+	<string>display_alerts for Illustrator</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>interai</string>
+	<key>uuid</key>
+	<string>5CCA5277-ECCA-40F5-82D4-8EC692BD28DC</string>
+</dict>
+</plist>
