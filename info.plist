@@ -46,7 +46,7 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>------------------------------------</string>
+					<string>DC152EF3-784F-4A02-AEED-87D4711505A6</string>
 				</array>
 				<key>name</key>
 				<string>Photoshop</string>
@@ -141,16 +141,27 @@
 				<key>name</key>
 				<string>Illustrator</string>
 			</dict>
-			<key>F16C053A-F130-44F7-8F0C-90FF8F915223</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>5CCA5277-ECCA-40F5-82D4-8EC692BD28DC</string>
-					<string>FC36B703-5A2E-4C89-AFE9-462C0B5394EA</string>
-				</array>
-				<key>name</key>
-				<string>Interaction Level for Illustrator</string>
-			</dict>
+      <key>F16C053A-F130-44F7-8F0C-90FF8F915223</key>
+      <dict>
+        <key>items</key>
+        <array>
+          <string>5CCA5277-ECCA-40F5-82D4-8EC692BD28DC</string>
+          <string>FC36B703-5A2E-4C89-AFE9-462C0B5394EA</string>
+        </array>
+        <key>name</key>
+        <string>Interaction Level for Illustrator</string>
+      </dict>
+      <key>DC152EF3-784F-4A02-AEED-87D4711505A6</key>
+      <dict>
+        <key>items</key>
+        <array>
+					<string>879277AD-3645-408D-890B-E8A2B2198A5B</string>
+					<string>BCD26792-A163-4F99-A15F-EBC659A2FBF4</string>
+					<string>26E07838-3EB3-4300-8371-B7ED95F86DE1</string>
+        </array>
+        <key>name</key>
+        <string>Dialog Level for Photoshop</string>
+      </dict>
 			<key>DE9EE989-74B9-4EFF-AC07-72A7134CB4A0</key>
 			<dict>
 				<key>items</key>

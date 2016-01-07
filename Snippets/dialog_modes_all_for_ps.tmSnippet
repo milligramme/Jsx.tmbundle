@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>app.displayDialog = DialogModes.ALL;
+</string>
+	<key>name</key>
+	<string>Dialog Modes All for Photoshop</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>interap</string>
+	<key>uuid</key>
+	<string>879277AD-3645-408D-890B-E8A2B2198A5B</string>
+</dict>
+</plist>
