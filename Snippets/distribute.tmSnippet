@@ -22,6 +22,8 @@
 </string>
 	<key>name</key>
 	<string>distribute()</string>
+	<key>scope</key>
+	<string>source.js</string>
 	<key>tabTrigger</key>
 	<string>dist</string>
 	<key>uuid</key>

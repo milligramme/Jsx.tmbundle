@@ -17,6 +17,8 @@
 })</string>
 	<key>name</key>
 	<string>align()</string>
+	<key>scope</key>
+	<string>source.js</string>
 	<key>tabTrigger</key>
 	<string>ali</string>
 	<key>uuid</key>
