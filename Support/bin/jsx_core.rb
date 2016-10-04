@@ -42,7 +42,7 @@ class JsxCore
     open(@tm_filepath) do |org_js|
       # target app.
       jsx = org_js.read
-      @target = (jsx.scan(/^#target\s+.+/).first || "#target indesign").downcase
+      @target = (jsx.scan(/^#target\s+.+/).first || jsx.scan(/^\/\/@target\s+.+/).first || "#target indesign").downcase
 
       # override $.write and $.writeln function, set tempo_wr obj to tempo_js
       open(@tempo_js.path, "w") do |js|
