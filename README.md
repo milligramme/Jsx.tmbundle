@@ -28,30 +28,36 @@ For use with [Adobe.jsx(ExtendScript)](http://www.adobe.com/devnet/scripting.htm
 
 This bundle depend on JavaScript.tmbundle.
 
-To execute .jsx and .jsxinc add File Types : 'jsx jsxinc'. 
+To execute .jsx and .jsxinc add File Types : 'jsx jsxinc'.
 
 ![Js File Type](img/js_file_type.png)
 
 **Execute**
 
-* Execute in CS3.app   = control + 3 
-* Execute in CS4.app   = control + 4 
-* Execute in CS5.app   = control + 5 
-* Execute in CS5.5.app = control + shift + 5
-* Execute in CS6.app   = control + 6 
-* Execute in CC.app    = control + 7 
+* Execute in CS3.app      = control + 3
+* Execute in CS4.app      = control + 4
+* Execute in CS5.app      = control + 5
+* Execute in CS5.5.app    = control + shift + 5
+* Execute in CS6.app      = control + 6
+* Execute in CC.app       = control + 7
+* Execute in CC 2014.app  = control + 8
+* Execute in CC 2015.app  = control + 9
 
-By Default run with InDesign, this can be changed using `#target`
+By Default run with InDesign, this can be changed using `#target` or `//@target`
 
      #target "indesign"
-     #target "indesign-7.0"
      #target "illustrator"
      #target "photoshop"
+     //@target "indesign"
+     //@target "illustrator"
+     //@target "photoshop"
      
-Can use relative path to `#include` scripts, like below
+Can use relative path to `#include` or `//@include` scripts, like below
      
      #include "underscore.js"
      #include "./underscore.js"
+     //@include "underscore.js"
+     //@include "./underscore.js"
      
 **Open in ExtensScript Toolkit**
 
