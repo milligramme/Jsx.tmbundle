@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# -*- coding:  utf-8 -*-
+
+require "#{ENV['TM_SUPPORT_PATH']}/lib/tm/executor"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/tm/save_current_document"
+require "tempfile"
+require "erb"
+require "pathname"
+require "#{ENV['TM_BUNDLE_SUPPORT']}/bin/jsx_core"
+
+cs_version = "CC 2014"
+
+TextMate.save_current_document
+TextMate::Executor.make_project_master_current_document
+
+jsx = JsxCore.new(cs_version)
+jsx.exec
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^8</string>
+	<key>name</key>
+	<string>Exec CC2014</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>semanticClass</key>
+	<string>process.run.script.ruby</string>
+	<key>uuid</key>
+	<string>2CCDDE18-41DB-4D6D-8C6D-4815A8F8A570</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
