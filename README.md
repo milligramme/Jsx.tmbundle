@@ -1,4 +1,4 @@
-# Jsx.tmbundle
+# Adobe-jsx.tmbundle
 
 For use with [Adobe.jsx(ExtendScript)](http://www.adobe.com/devnet/scripting.html) CS3 or later.
 
@@ -6,23 +6,22 @@ For use with [Adobe.jsx(ExtendScript)](http://www.adobe.com/devnet/scripting.htm
 
 ## Install
 
-**Git for TextMate1.5.x**
-
-    $ git clone https://github.com/milligramme/Jsx.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/Jsx.tmbundle
-
-**Git for TextMate2.x**
+**Git**
 
     $ git clone https://github.com/milligramme/Jsx.tmbundle.git ~/Library/Application\ Support/Avian/Bundles/Jsx.tmbundle
+    
+v2.0-beta.12.23 or later, bundles are no longer read from Avian folder
+    
+    $ git clone https://github.com/milligramme/Jsx.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/Jsx.tmbundle
 
 **Download Zip**
 
 1. [Download the zip](https://github.com/milligramme/Jsx.tmbundle/zipball/master)
 1. Unzip.
 1. Rename unzipped folder to "Jsx.tmbundle".
-1. Open Jsx.tmbundle with TextMate 1.5 or 2.
+1. Double Click or open Jsx.tmbundle with TextMate.
 1. The bundle installs to following paths.
     * ~/Library/Application\ Support/TextMate/Pristine\ Copy/Bundles/Jsx.tmbundle
-    * ~/Library/Application\ Support/Avian/Pristine\ Copy/Bundles/Jsx.tmbundle
 
 ## Usage
 
