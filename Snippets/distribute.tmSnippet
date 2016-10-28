@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>distribute(${10:alignDistributeItems},
+	<string>distribute(${10:align_distribute_items/* Array of PageItem */},
   DistributeOptions.${21:BOTTOM_EDGES
-}${22:HORIZONTAL_CENTERS
-}${23:HORIZONTAL_SPACE
-}${24:LEFT_EDGES
-}${25:RIGHT_EDGES
-}${26:TOP_EDGES
-}${27:VERTICAL_CENTERS
-}${28:VERTICAL_SPACE
+  }${22:HORIZONTAL_CENTERS
+  }${23:HORIZONTAL_SPACE
+  }${24:LEFT_EDGES
+  }${25:RIGHT_EDGES
+  }${26:TOP_EDGES
+  }${27:VERTICAL_CENTERS
+  }${28:VERTICAL_SPACE
   }${30:,AlignDistributeBounds.${31:ITEM_BOUNDS
-}${32:MARGIN_BOUNDS
-}${33:PAGE_BOUNDS
-}${34:SPREAD_BOUNDS}
-  }${40:,}${41|true,false|}
-  ${50:,}${51:absoluteDistributeMeasurement}
-)
+  }${32:MARGIN_BOUNDS
+  }${33:PAGE_BOUNDS
+  }${34:SPREAD_BOUNDS}
+  }${40:,}${41|true,false|}/* Use Distribute Measurement */
+  ${50:,}${51:absolute_distribute_measurement/* Distance */}
+  ${60:,}${61:reference/*CS6 or later PageItem */});
 </string>
 	<key>name</key>
 	<string>distribute()</string>

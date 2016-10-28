@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>align(${10:alignDistributeItems},
+	<string>align(${10:align_distribute_items/* Array of PageItem */},
   AlignOptions.${21:BOTTOM_EDGES
-}${22:HORIZONTAL_CENTERS
-}${23:LEFT_EDGES
-}${24:RIGHT_EDGES
-}${25:TOP_EDGES
-}${26:VERTICAL_CENTERS
+  }${22:HORIZONTAL_CENTERS
+  }${23:LEFT_EDGES
+  }${24:RIGHT_EDGES
+  }${25:TOP_EDGES
+  }${26:VERTICAL_CENTERS
   }${30:,AlignDistributeBounds.${31:ITEM_BOUNDS
-}${32:MARGIN_BOUNDS
-}${33:PAGE_BOUNDS
-}${34:SPREAD_BOUNDS}
-})</string>
+  }${32:MARGIN_BOUNDS
+  }${33:PAGE_BOUNDS
+  }${34:SPREAD_BOUNDS
+  }${40:,}${41:reference/*CS6 or later PageItem */}});</string>
 	<key>name</key>
 	<string>align()</string>
 	<key>scope</key>

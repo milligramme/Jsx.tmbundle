@@ -4,9 +4,9 @@
 <dict>
 	<key>content</key>
 	<string>colors.add({
-  model: ColorModel.${10:${11:PROCESS}${12:SPOT}${13:REGISTRATION}${14:MIXEDINKMODEL}}, 
-  space: ColorSpace.${20:${21:CMYK}${22:RGB}${23:LAB}${24:MIXEDINK}}, 
-  colorValue: [${30:0,0,0,0}], 
+  model: ColorModel.${10:${11:PROCESS}${12:SPOT}${13:REGISTRATION}${14:MIXEDINKMODEL}},
+  space: ColorSpace.${20:${21:CMYK}${22:RGB}${23:LAB}${24:MIXEDINK}},
+  colorValue: [${30:0,0,0,0}],
   name: "${40:}"}
 );</string>
 	<key>name</key>

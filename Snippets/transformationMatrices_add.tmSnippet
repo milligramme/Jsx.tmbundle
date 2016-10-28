@@ -9,8 +9,7 @@
   ${30:horizontalScaleFactor: ${31:1/*Horizontal Scale*/},}
   ${40:verticalScaleFactor: ${41:1/*Vertical Scale*/},}
   ${50:horizontalTranslation: ${51:0/*Horizontal Traslate*/},}
-  ${60:verticalTranslation: ${61:0/*Vertical Translate*/}}
-});</string>
+  ${60:verticalTranslation: ${61:0/*Vertical Translate*/}}});</string>
 	<key>name</key>
 	<string>transformationMatrices.add</string>
 	<key>scope</key>
