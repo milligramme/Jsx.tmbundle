@@ -8,11 +8,12 @@ For use with [Adobe.jsx(ExtendScript)](http://www.adobe.com/devnet/scripting.htm
 
 **Git**
 
-    $ git clone https://github.com/milligramme/Jsx.tmbundle.git ~/Library/Application\ Support/Avian/Bundles/Jsx.tmbundle
-    
+    $ git clone https://github.com/milligramme/Jsx.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/Jsx.tmbundle
+
 v2.0-beta.12.23 or later, bundles are no longer read from Avian folder
     
-    $ git clone https://github.com/milligramme/Jsx.tmbundle.git ~/Library/Application\ Support/TextMate/Bundles/Jsx.tmbundle
+    $ git clone https://github.com/milligramme/Jsx.tmbundle.git ~/Library/Application\ Support/Avian/Bundles/Jsx.tmbundle
+    
 
 **Download Zip**
 
