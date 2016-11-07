@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${10:#targetengine '${11:session}'}
 var u;
-var ${1:w} = new Window('${20:${21:dialog}${22:palette}${23:window}}', "${30:title}", ${40:[${41:x0}, ${42:y0}, ${43:x1}, ${44:y1}]}${45:u}${50:, {closeButton:true, minimizeButton:true, maximizeButton:false, resizeable:false, borderless:false\}});
+var ${1:w} = new Window('${20|dialog,palette,window|}', "${30:title}", ${40:[${41:x0}, ${42:y0}, ${43:x1}, ${44:y1}]}${45:u}${50:, {closeButton:true, minimizeButton:true, maximizeButton:false, resizeable:false, borderless:false\}});
 ${1:w}.orientation = 'column';
 ${1:w}.margins = 5;
 ${1:w}.spacing = 5;

@@ -4,23 +4,15 @@
 <dict>
 	<key>content</key>
 	<string>align(${10:align_distribute_items/* Array of PageItem */},
-  AlignOptions.${21:BOTTOM_EDGES
-  }${22:HORIZONTAL_CENTERS
-  }${23:LEFT_EDGES
-  }${24:RIGHT_EDGES
-  }${25:TOP_EDGES
-  }${26:VERTICAL_CENTERS
-  }${30:,AlignDistributeBounds.${31:ITEM_BOUNDS
-  }${32:MARGIN_BOUNDS
-  }${33:PAGE_BOUNDS
-  }${34:SPREAD_BOUNDS
-  }${40:,}${41:reference/*CS6 or later PageItem */}});</string>
+  AlignOptions.${20|BOTTOM_EDGES,HORIZONTAL_CENTERS,LEFT_EDGES,RIGHT_EDGES,TOP_EDGES,VERTICAL_CENTERS|}
+  ${30:,AlignDistributeBounds.${31|ITEM_BOUNDS,MARGIN_BOUNDS,PAGE_BOUNDS,SPREAD_BOUNDS|}
+  ${40:,}${41:reference/*CS6 or later PageItem */}});</string>
 	<key>name</key>
 	<string>align</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>ali</string>
+	<string>align</string>
 	<key>uuid</key>
 	<string>61D9ADBD-0E8E-4081-A4D0-5652ED4C547C</string>
 </dict>

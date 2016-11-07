@@ -3,13 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>fit(FitOptions.${1:APPLY_FRAME_FITTING_OPTIONS
-}${2:APPLY_FRAME_FITTING_OPTIONS
-}${3:CENTER_CONTENT
-}${4:CONTENT_TO_FRAME
-}${5:FILL_PROPORTIONALLY
-}${6:FRAME_TO_CONTENT
-}${7:PROPORTIONALLY});</string>
+	<string>fit(FitOptions.${1|APPLY_FRAME_FITTING_OPTIONS,APPLY_FRAME_FITTING_OPTIONS,CENTER_CONTENT,CONTENT_TO_FRAME,FILL_PROPORTIONALLY,FRAME_TO_CONTENT,PROPORTIONALLY|});</string>
 	<key>name</key>
 	<string>fit</string>
 	<key>scope</key>
