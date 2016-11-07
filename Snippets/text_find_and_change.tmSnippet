@@ -35,7 +35,7 @@ function text_find_and_change(target_obj, find_txt_obj, change_txt_obj){
   app.changeTextPreferences            = NothingEnum.nothing;
 }</string>
 	<key>name</key>
-	<string>text_find_and_change</string>
+	<string>text find and change</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

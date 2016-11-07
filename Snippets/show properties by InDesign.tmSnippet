@@ -6,7 +6,7 @@
 	<string>var obj=app.activeDocument.selection[0];
 \$.writeln(obj.properties.toSource().replace(/,/g,",\n"));</string>
 	<key>name</key>
-	<string>Show Properties for InDesign</string>
+	<string>Show Properties</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

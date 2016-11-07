@@ -11,7 +11,7 @@
 }${6:FRAME_TO_CONTENT
 }${7:PROPORTIONALLY});</string>
 	<key>name</key>
-	<string>fit()</string>
+	<string>fit</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>app.scriptPreferences.userInteractionLevel = UserInteractionLevels.NEVER_INTERACT;
+	<string>app.scriptPreferences.userInteractionLevel = UserInteractionLevels.$:{1|INTERACT_WITH_ALL,INTERACT_WITH_ALERTS,NEVER_INTERACT|};
 </string>
 	<key>name</key>
-	<string>interact never</string>
+	<string>UserInteractionLevels</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

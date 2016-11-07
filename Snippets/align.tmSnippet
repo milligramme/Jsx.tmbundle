@@ -16,7 +16,7 @@
   }${34:SPREAD_BOUNDS
   }${40:,}${41:reference/*CS6 or later PageItem */}});</string>
 	<key>name</key>
-	<string>align()</string>
+	<string>align</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

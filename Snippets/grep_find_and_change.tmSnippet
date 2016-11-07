@@ -34,7 +34,7 @@ function grep_find_and_change(target_obj, find_grep_obj, change_grep_obj){
   app.changeGrepPreferences            = NothingEnum.nothing;
 }</string>
 	<key>name</key>
-	<string>grep_find_and_change</string>
+	<string>grep find and change</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

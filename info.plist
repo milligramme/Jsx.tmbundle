@@ -46,7 +46,7 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>DC152EF3-784F-4A02-AEED-87D4711505A6</string>
+					<string>879277AD-3645-408D-890B-E8A2B2198A5B</string>
 				</array>
 				<key>name</key>
 				<string>Photoshop</string>
@@ -73,7 +73,8 @@
 				<array>
 					<string>CB6C2AC2-E1F5-4381-9D99-6CD18D890E89</string>
 					<string>950D23F2-D1C4-4569-8224-97516426E7BF</string>
-					<string>DE9EE989-74B9-4EFF-AC07-72A7134CB4A0</string>
+					<string>5213CD44-C520-4E4C-83BA-01093EFB8667</string>
+					<string>E0FD459C-5BF4-4BDC-B751-048875AFB828</string>
 					<string>4156C4E2-81CF-4431-B1A6-7F8D2FFE5948</string>
 					<string>2FEF0BDF-873F-4D75-93F4-511E763937C3</string>
 					<string>C5529BD9-3398-4548-8995-B9D755938F13</string>
@@ -85,7 +86,6 @@
 					<string>1B02C88C-1EFE-4EF2-B52A-1A9E5A2E0A5A</string>
 					<string>61D9ADBD-0E8E-4081-A4D0-5652ED4C547C</string>
 					<string>ACBD728E-1E4B-406B-BD2A-78B35576B23F</string>
-					<string>5213CD44-C520-4E4C-83BA-01093EFB8667</string>
 				</array>
 				<key>name</key>
 				<string>InDesign</string>
@@ -145,32 +145,11 @@
 				<key>items</key>
 				<array>
 					<string>2B10796C-88DF-45DC-AB61-0754792B9C8B</string>
-					<string>F16C053A-F130-44F7-8F0C-90FF8F915223</string>
+					<string>5CCA5277-ECCA-40F5-82D4-8EC692BD28DC</string>
 				</array>
 				<key>name</key>
 				<string>Illustrator</string>
 			</dict>
-      <key>F16C053A-F130-44F7-8F0C-90FF8F915223</key>
-      <dict>
-        <key>items</key>
-        <array>
-          <string>5CCA5277-ECCA-40F5-82D4-8EC692BD28DC</string>
-          <string>FC36B703-5A2E-4C89-AFE9-462C0B5394EA</string>
-        </array>
-        <key>name</key>
-        <string>Interaction Level for Illustrator</string>
-      </dict>
-      <key>DC152EF3-784F-4A02-AEED-87D4711505A6</key>
-      <dict>
-        <key>items</key>
-        <array>
-					<string>879277AD-3645-408D-890B-E8A2B2198A5B</string>
-					<string>BCD26792-A163-4F99-A15F-EBC659A2FBF4</string>
-					<string>26E07838-3EB3-4300-8371-B7ED95F86DE1</string>
-        </array>
-        <key>name</key>
-        <string>Dialog Level for Photoshop</string>
-      </dict>
 			<key>DE9EE989-74B9-4EFF-AC07-72A7134CB4A0</key>
 			<dict>
 				<key>items</key>

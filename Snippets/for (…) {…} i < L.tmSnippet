@@ -7,7 +7,7 @@
   ${100:${1:Things}[${20:i}]}$0
 };</string>
 	<key>name</key>
-	<string>for i &lt; iL</string>
+	<string>for i &lt; len</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

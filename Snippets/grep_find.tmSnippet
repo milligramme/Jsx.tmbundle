@@ -29,7 +29,7 @@ function grep_find(target_obj, find_grep_obj){
 }
 </string>
 	<key>name</key>
-	<string>grep_find</string>
+	<string>grep find</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

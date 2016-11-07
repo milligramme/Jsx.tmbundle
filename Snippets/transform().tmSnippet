@@ -22,7 +22,7 @@
   );
 $40</string>
 	<key>name</key>
-	<string>transform()</string>
+	<string>transform</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

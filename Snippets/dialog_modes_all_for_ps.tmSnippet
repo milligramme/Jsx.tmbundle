@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>app.displayDialog = DialogModes.ALL;
+	<string>app.displayDialog = DialogModes.${1|ALL,NO,ERROR|};
 </string>
 	<key>name</key>
-	<string>Dialog Modes All for Photoshop</string>
+	<string>DialogModes</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

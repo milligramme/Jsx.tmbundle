@@ -21,7 +21,7 @@
   ${60:,}${61:reference/*CS6 or later PageItem */});
 </string>
 	<key>name</key>
-	<string>distribute()</string>
+	<string>distribute</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>

@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>app.userInteractionLevel = UserInteractionLevel.DISPLAYALERTS;
+	<string>app.userInteractionLevel = UserInteractionLevel.${1|DISPLAYALERTS,DONTDISPLAYALERTS|};
 </string>
 	<key>name</key>
-	<string>display_alerts for Illustrator</string>
+	<string>UserInteractionLevel</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
