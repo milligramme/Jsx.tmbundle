@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>app.doScript(${10:scriptfile or func}, ScriptLanguage.${20|JAVASCRIPT,VISUAL_BASIC|}, [${30:arguments}], UndoModes.${40|FAST_ENTIRE_SCRIPT,AUTO_UNDO,ENTIRE_SCRIPT,SCRIPT_REQUEST|}, "${50:undo_name}" );
+</string>
+	<key>name</key>
+	<string>doScript</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>dos</string>
+	<key>uuid</key>
+	<string>5213CD44-C520-4E4C-83BA-01093EFB8667</string>
+</dict>
+</plist>
