@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>app.scriptPreferences.userInteractionLevel = UserInteractionLevels.$:{1|INTERACT_WITH_ALL,INTERACT_WITH_ALERTS,NEVER_INTERACT|};
+	<string>app.scriptPreferences.userInteractionLevel = UserInteractionLevels.${1|INTERACT_WITH_ALL,INTERACT_WITH_ALERTS,NEVER_INTERACT|};
 </string>
 	<key>name</key>
 	<string>UserInteractionLevels</string>
