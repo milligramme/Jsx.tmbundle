@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${10:#targetengine '${11:session}'}
+
+// var undomode = UndoModes.AUTO_UNDO;
+// var undomode = UndoModes.ENTIRE_SCRIPT;
+var undomode = UndoModes.FAST_ENTIRE_SCRIPT;
+// var undomode = UndoModes.SCRIPT_REQUEST;
+
+
+var create_palette = function () {
+  ${1:w} = new Window('${20|palette,window|}', "${30:title}", ${40:[${41:x0}, ${42:y0}, ${43:x1}, ${44:y1}]}${45:u}${50:, {
+    closeButton: true,
+    minimizeButton: true,
+    maximizeButton: false,
+    resizeable: false,
+    borderless: false\}
+  });
+  ${1:w}.orientation = 'column';
+  ${1:w}.margins = 5;
+  ${1:w}.spacing = 5;
+  ${1:w}.alignChildren = ['fill', 'fill'];
+  
+  ${1:w}.btn_g = ${1:w}.add('group');
+  var ok_btn  = ${1:w}.btn_g.add('button', u, "OK", {name: "ok"});
+  var can_btn = ${1:w}.btn_g.add('button', u, "Cancel", {name: "cancel"});
+  
+  var task_btn = w.add('button', u, "task");
+  
+  var flg = false;
+  ok_btn.onClick = function () {
+    flg = true;
+    w.close();
+  }
+  
+  can_btn.onClick = function () {
+    w.close();
+  }
+  
+  task_btn.onClick = function () {
+    before_do();
+    var task = function () {
+      ${0: // Do something.. }
+    }
+    app.doScript(task, ScriptLanguage.JAVASCRIPT, [], undomode);
+    after_do();
+  }
+  return w
+}
+
+var before_do = function () {
+}
+
+var after_do = function () {
+}
+
+
+var u, ${1:w};
+var main = create_palette();
+main.show();</string>
+	<key>name</key>
+	<string>ScriptUI palette template</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>suip</string>
+	<key>uuid</key>
+	<string>9CAC9FE4-A2A6-4262-BB23-1B7EB738FEDA</string>
+</dict>
+</plist>

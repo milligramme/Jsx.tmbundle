@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${10:#targetengine '${11:session}'}
+var create_dialog = function () {
+  ${1:w} = new Window('dialog', "title", u, {
+    closeButton: true,
+    minimizeButton: true,
+    maximizeButton: false,
+    resizeable: false,
+    borderless: false}
+  );
+  ${1:w}.orientation = 'column';
+  ${1:w}.margins = 5;
+  ${1:w}.spacing = 5;
+  ${1:w}.alignChildren = ['fill', 'fill'];
+
+  var xxx_input = ${1:w}.add('edittext', u, "xxxxx");
+  ret.message = xxx_input.text;
+
+  ${1:w}.btn_g = ${1:w}.add('group');
+  var ok_btn  = ${1:w}.btn_g.add('button', u, "OK", {name: "ok"});
+  var can_btn = ${1:w}.btn_g.add('button', u, "Cancel", {name: "cancel"});
+
+  xxx_input.onChange = function () {
+    ret.message = this.text;
+  }
+    return ${1:w}
+  }
+
+var u, ${1:w}, ret = {};
+var main = create_dialog();
+if (main.show() == 1 &amp;&amp; ret) {
+  // Do something ...
+}
+else {
+  exit();
+}</string>
+	<key>name</key>
+	<string>ScriptUI dialog template</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>suid</string>
+	<key>uuid</key>
+	<string>A38C0F98-F3CD-499A-BC5D-69D7E849844E</string>
+</dict>
+</plist>
